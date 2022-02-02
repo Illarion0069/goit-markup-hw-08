@@ -1,0 +1,20 @@
+.hero__container-button {
+  cursor: pointer;
+  padding: 10px 22px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  border-radius: 4px;
+  border-style: none;
+  min-width: 200px;
+  text-align: center;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    color: #ffffff;
+  }
+}

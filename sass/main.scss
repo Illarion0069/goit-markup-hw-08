@@ -1,0 +1,27 @@
+// BASE
+@import "./base/reset";
+//UTILS
+@import "./utils/variables";
+@import "./utils/mixins";
+// COMPONENTS
+@import "./components/container";
+@import "./components/logo";
+@import "./components/hero-button";
+//NAV
+@import "./layout/nav";
+@import "./layout/contacts";
+
+//Studio page
+@import "./layout/hero";
+@import "./layout/backdrop";
+@import "./layout/benefits";
+@import "./layout/photo";
+@import "./layout/team";
+@import "./layout/clients";
+
+//Portfolio page
+@import "./layout/portfolio-filter";
+@import "./layout/examples";
+
+//FOOTER
+@import "./layout/footer";

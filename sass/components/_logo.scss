@@ -1,0 +1,24 @@
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: #000000;
+  text-decoration: none;
+  font-family: raleway, sans-serif;
+  @include font(26px, 1.19, 0.03em, 700);
+  @extend .display-flex;
+}
+
+.footer__left-logo {
+  @extend .display-flex;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-family: raleway, sans-serif;
+  @include font(26px, 1.19, 0.03em, 700);
+}
