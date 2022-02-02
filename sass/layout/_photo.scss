@@ -1,4 +1,7 @@
 .services {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 .services__container-heading {
