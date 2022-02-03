@@ -1,20 +1,23 @@
 .filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
 }
 .filter__container {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter__container-list {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .filter__container-item {
   margin-right: 8px;
+  margin-bottom: 15px;
 
-  &:last-child {
-    margin-right: 0;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
