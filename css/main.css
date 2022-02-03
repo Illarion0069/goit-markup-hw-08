@@ -980,19 +980,35 @@ body {
   }
 }
 
-.filter__container {
-  margin-bottom: 40px;
+@media screen and (min-width: 480px) {
+  .filter__container {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__container {
+    margin-bottom: 14px;
+  }
 }
 
-.filter__container-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+@media screen and (min-width: 480px) {
+  .filter__container-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter__container-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filter__container-item {
@@ -1033,6 +1049,24 @@ body {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .examples {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .examples-item {
@@ -1047,6 +1081,14 @@ body {
   .examples-item:hover {
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples-item {
+    width: 354px;
+  }
+  .examples-item:last-child {
+    margin-bottom: 60px;
   }
 }
 
@@ -1133,9 +1175,17 @@ body {
   }
 }
 
-.footer__left {
-  margin: 0;
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .footer__left {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__left {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .footer__left-address {

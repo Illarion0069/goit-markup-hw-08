@@ -4,13 +4,23 @@
   }
 }
 .filter__container {
-  margin-bottom: 40px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
 }
 
 .filter__container-list {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: flex-start;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter__container-item {
   margin-right: 8px;
