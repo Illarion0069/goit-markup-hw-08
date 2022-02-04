@@ -5,6 +5,9 @@
   @include desk {
     width: 100%;
   }
+  @include tab {
+    width: 100%;
+  }
 }
 .team__container-team {
   @include tab {
