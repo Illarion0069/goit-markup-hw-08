@@ -1,14 +1,13 @@
 .filter {
-  @media screen and (max-width: 480px) {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .filter__container {
   @media screen and (max-width: 480px) {
     margin-bottom: 40px;
   }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 14px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -18,7 +17,9 @@
     display: flex;
     justify-content: flex-start;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
   }
 }

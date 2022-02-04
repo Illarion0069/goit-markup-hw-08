@@ -2,6 +2,9 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 .services__container-heading {

@@ -3,8 +3,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .benefits__container-list {
@@ -12,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -23,7 +24,7 @@
     width: 100%;
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     width: 354px;
     margin-bottom: 30px;
     &:nth-last-child(-n + 2) {
@@ -35,6 +36,16 @@
 
 .benefits__container-title {
   @media screen and (max-width: 480px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -61,7 +72,7 @@
     display: flex;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     width: 345px;
     height: 120px;
     margin-bottom: 30px;

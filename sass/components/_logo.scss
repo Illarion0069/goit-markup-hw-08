@@ -15,12 +15,10 @@
 }
 
 .footer__left-logo {
-  @media screen and (max-width: 480px) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
 
   color: #ffffff;
   text-decoration: none;

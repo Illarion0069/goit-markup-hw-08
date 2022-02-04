@@ -1,27 +1,28 @@
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 480px) {
     width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    width: 768px;
   }
 }
 .footer__section {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
   }
   align-items: baseline;
   justify-content: space-between;
 }
 .footer-tablet {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
     padding-bottom: 60px;
-    padding-top: 0;
+    padding-top: 60px;
   }
 }
 // LEFT FOOTER
@@ -30,7 +31,7 @@
     margin-bottom: 60px;
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     margin: 0;
     text-align: center;
   }
@@ -75,9 +76,7 @@
   }
 }
 .footer__center-title {
-  @media screen and (max-width: 480px) {
-    text-align: center;
-  }
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 0.9;
@@ -120,12 +119,11 @@
 // RIGHT FOOTER
 .footer__right {
   color: #ececec;
+  padding-bottom: 60px;
 }
 
 .footer__right-title {
-  @media screen and (max-width: 480px) {
-    text-align: center;
-  }
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 0.9;
@@ -133,8 +131,9 @@
   color: var(--primary-bg-color);
   margin-bottom: 20px;
 }
+
 .footer__right-flex {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     text-align: center;
   }
 }
@@ -143,7 +142,9 @@
   @media screen and (max-width: 480px) {
     min-width: 100%;
   }
-
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    min-width: 450px;
+  }
   padding-left: 20px;
   min-height: 50px;
   margin-right: 12px;
@@ -163,14 +164,22 @@
   }
 }
 .footer__right .hero__container-button {
-  @media screen and (max-width: 480px) {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // @media screen and (max-width: 480px) {
+  //   margin-top: 20px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+  // @media screen and (min-width: 480px) and (max-width: 768px) {
+  //   margin-top: 20px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero__container-button-logo {
   width: 24px;
