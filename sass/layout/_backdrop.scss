@@ -18,7 +18,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 450px;
   }
   position: relative;
@@ -148,7 +148,7 @@
   margin-bottom: 12px;
 }
 .form__field-text {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     max-height: 120px;
@@ -161,7 +161,7 @@
   }
 }
 .form__field-checkbox label[for="policy"] {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
@@ -177,7 +177,7 @@
   color: #2196f3;
 }
 .form-input {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     position: relative;
 
     &:hover,

@@ -140,7 +140,7 @@ body {
   font-weight: 700;
   border-radius: 4px;
   border-style: none;
-  max-width: 200px;
+  width: 200px;
   text-align: center;
 }
 .hero__container-button:hover, .hero__container-button:focus {
@@ -325,7 +325,7 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .modal {
     width: 450px;
   }
@@ -500,7 +500,7 @@ body {
   margin-bottom: 12px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .form__field-text {
     -webkit-transition-duration: 250ms;
             transition-duration: 250ms;
@@ -516,7 +516,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .form__field-checkbox label[for=policy] {
     font-size: 12px;
     line-height: 14px;
@@ -529,7 +529,7 @@ body {
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .form-input {
     position: relative;
   }
@@ -972,13 +972,13 @@ body {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .filter {
     padding-top: 60px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .filter__container {
     margin-bottom: 40px;
   }
@@ -989,7 +989,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .filter__container-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1042,7 +1042,7 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .examples {
     width: 480px;
   }
@@ -1066,9 +1066,9 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .examples-item {
-    width: 450px;
+    width: 100%;
     margin-bottom: 30px;
   }
   .examples-item:hover .examples-hover-text {
