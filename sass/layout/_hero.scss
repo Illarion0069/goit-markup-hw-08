@@ -1,15 +1,18 @@
 .hero {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-
-  @media screen and (max-width: 480px) {
-    max-width: 480px;
-    background-image: url("/img/Hero-mob.jpeg");
+  flex-grow: 1;
+  background-image: url(/img/hero-image.jpeg);
+  @include desk {
+    width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    max-width: 768px;
-    background-image: url("/img/Hero\ tablet.jpeg");
+  @include tab {
+    width: 100%;
+  }
+  @include tel {
+    width: 100%;
   }
 }
 .hero__container {

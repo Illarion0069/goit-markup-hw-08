@@ -2,43 +2,46 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  @media screen and (max-width: 480px) {
-    width: 480px;
+  @include tel {
+    width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    width: 768px;
+  @include tab {
+    width: 100%;
+  }
+  @include desk {
+    width: 100%;
   }
 }
 .footer__section {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @include desk {
+    display: flex;
+    justify-content: center;
   }
   align-items: baseline;
   justify-content: space-between;
 }
 .footer-tablet {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @include tab {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
     padding-bottom: 60px;
-    padding-top: 60px;
   }
 }
 // LEFT FOOTER
 .footer__left {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     margin-bottom: 60px;
     text-align: center;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @include tab {
     margin: 0;
     text-align: center;
   }
 }
 
 .footer__left-address {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
   }
   font-size: 14px;
   line-height: 1.7;
@@ -71,8 +74,11 @@
 }
 // CENTRAL FOOTER
 .footer__center {
-  @media screen and (max-width: 480px) {
+  @include tel {
     padding-bottom: 60px;
+  }
+  @include desk {
+    padding-left: 70px;
   }
 }
 .footer__center-title {
@@ -119,10 +125,15 @@
 // RIGHT FOOTER
 .footer__right {
   color: #ececec;
-  padding-bottom: 60px;
+  @include desk {
+    padding-left: 93px;
+  }
 }
 
 .footer__right-title {
+  @include desk {
+    text-align: start;
+  }
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -133,17 +144,23 @@
 }
 
 .footer__right-flex {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @include tab {
     text-align: center;
+  }
+  @include desk {
+    display: flex;
   }
 }
 
 .footer__right-form {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     min-width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @include tab {
     min-width: 450px;
+  }
+  @include desk {
+    min-width: 358px;
   }
   padding-left: 20px;
   min-height: 50px;
@@ -164,22 +181,15 @@
   }
 }
 .footer__right .hero__container-button {
-  // @media screen and (max-width: 480px) {
-  //   margin-top: 20px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-  // @media screen and (min-width: 480px) and (max-width: 768px) {
-  //   margin-top: 20px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  @include desk {
+    margin-top: 0px;
+  }
 }
 .hero__container-button-logo {
   width: 24px;
