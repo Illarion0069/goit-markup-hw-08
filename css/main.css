@@ -19,7 +19,6 @@ button {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -253,24 +252,19 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-image: url(/img/hero-image.jpeg);
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 100%;
-  }
+  background-image: url("/img/Hero-web-1x.jpeg");
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/img/Hero-web-2x.jpeg");
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/img/Hero-mob-2x.jpeg");
+  }
+}
 .hero__container {
   padding-top: 118px;
   padding-bottom: 118px;

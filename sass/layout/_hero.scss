@@ -4,17 +4,29 @@
   background-size: cover;
   text-align: center;
   flex-grow: 1;
-  background-image: url(/img/hero-image.jpeg);
-  @include desk {
-    width: 100%;
-  }
-  @include tab {
-    width: 100%;
-  }
-  @include tel {
-    width: 100%;
+  background-image: url("/img/Hero-web-1x.jpeg");
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/img/Hero-web-2x.jpeg");
   }
 }
+
+@include tel {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("/img/Hero-mob-2x.jpeg");
+    }
+  }
+}
+
 .hero__container {
   padding-top: 118px;
   padding-bottom: 118px;
