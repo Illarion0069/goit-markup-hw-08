@@ -2,11 +2,15 @@
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
-  @include desk {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  @include tab {
+  @media screen and (min-width: 1200px) {
     width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 .team__container-team {

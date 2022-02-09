@@ -43,6 +43,64 @@
                     </ul>
                 </div>
             </nav>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                    <svg class="burger" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menuburger"></use>
+                    </svg>
+                </button>
+
+<div class="mob-menu is-hidden" data-menu>
+
+    <div class="container-mob">
+
+        <div class="mob-menu-top">
+            
+                    
+                        <button type="button" class="menu-button-closed" data-menu-close>
+                            <svg class="closed" width="40" height="40">
+                                <use href="./images/icons.svg#icon-closex"></use>
+                            </svg>
+                        </button>
+                    
+                    <ul class="mob-menu-list">
+                        <li class="mob-menu-list__item">
+                            <a href="./index.html" class="mob-menu-list__link">Студия</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                    
+        </div>
+
+        <div class="mob-menu-bottom">
+
+                        <div class="mob-connect">
+                            <a class="mob-connect__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="mob-connect__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </div>
+
+                        <ul class="social-mob">
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">Instagram</a>
+                            </li>
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">Twitter</a>
+                            </li>
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">Facebook</a>
+                            </li>
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">LinkedIn</a>
+                            </li>
+                        </ul>
+
+        </div>
+    </div>
+</div>
     </header> -->
     <main>
     <!------- МЕНЮ СЕКЦИИ ПОРТФОЛИО  ---------------------------------------------------------------------->
@@ -73,7 +131,15 @@
                 <ul class="examples-list list">
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-technokrjak.jpeg" class="link" width="370" alt="портфолио веб-сайта"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img1-dt-1x.jpg 1x, ./img/portfolio-img1-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img1-tab-1x.jpg 1x, ./img/portfolio-img1-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img1-mob-1x.jpg 1x, ./img/portfolio-img1-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-web-site.jpg" alt="img-web-site">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -86,7 +152,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-poster.jpeg" class="link" width="370" alt="портфолио дизайна постера"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img2-dt-1x.jpg 1x, ./img/portfolio-img2-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img2-tab-1x.jpg 1x, ./img/portfolio-img2-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img2-mob-1x.jpg 1x, ./img/portfolio-img2-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-designe.jpg" alt="img-designe">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -100,7 +174,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-seafood.jpeg" class="link" width="370" alt="портфолио ресторана"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img3-dt-1x.jpg 1x, ./img/portfolio-img3-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img3-tab-1x.jpg 1x, ./img/portfolio-img3-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img3-mob-1x.jpg 1x, ./img/portfolio-img3-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-app.jpg" alt="img-app">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -114,7 +196,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-prime.jpeg" class="link" width="370" alt="портфолио проект прайм"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img3-dt-1x.jpg 1x, ./img/portfolio-img3-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img3-tab-1x.jpg 1x, ./img/portfolio-img3-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img3-mob-1x.jpg 1x, ./img/portfolio-img3-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-marketing.jpg" alt="img-marketing">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -128,7 +218,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-boxes.jpeg" class="link" width="370" alt="портфолио проекта боксес"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img4-dt-1x.jpg 1x, ./img/portfolio-img4-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img4-tab-1x.jpg 1x, ./img/portfolio-img4-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img4-mob-1x.jpg 1x, ./img/portfolio-img4-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-app-two.jpg" alt="img-app-two">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -142,7 +240,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-inspiration.jpeg" class="link" width="370" alt="портфолио веб-сайта"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img5-dt-1x.jpg 1x, ./img/portfolio-img5-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img5-tab-1x.jpg 1x, ./img/portfolio-img5-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img5-mob-1x.jpg 1x, ./img/portfolio-img5-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-web-site-two.jpg" alt="img-web-site-two">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -156,7 +262,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-limitededition.jpeg" class="link" width="370" alt="портфолио дизайна издания"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img6-dt-1x.jpg 1x, ./img/portfolio-img6-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img6-tab-1x.jpg 1x, ./img/portfolio-img6-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img6-mob-1x.jpg 1x, ./img/portfolio-img6-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-designe-two.jpg" alt="img-designe-two">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -170,7 +284,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-lab.jpeg" width="370" class="link" alt="портфолио проекта лаб"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img7-dt-1x.jpg 1x, ./img/portfolio-img7-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img7-tab-1x.jpg 1x, ./img/portfolio-img7-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img7-mob-1x.jpg 1x, ./img/portfolio-img7-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-marketing-two.jpg" alt="img-marketing-two">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
@@ -184,7 +306,15 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-border">
-                            <a href="#"><img src="./img/portfolio-growingbusines.jpeg" class="link" width="370" alt="портфолио приложения"></a>
+                            <picture>
+                                <source srcset="./img/portfolio-img8-dt-1x.jpg 1x, ./img/portfolio-img8-dt-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./img/portfolio-img8-tab-1x.jpg 1x, ./img/portfolio-img8-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img/portfolio-img8-mob-1x.jpg 1x, ./img/portfolio-img8-mob-2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./img/imagessecondpage/img-app-three.jpg" alt="img-app-three">
+                            </picture>
                             <div class="examples-hover-text">
                                 Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.

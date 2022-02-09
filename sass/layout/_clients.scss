@@ -9,15 +9,11 @@
   letter-spacing: 0.03em;
   font-size: 28px;
   line-height: 33px;
-  @include desk {
-    font-size: 36px;
-    line-height: 42px;
-  }
 }
 .clients__container-list {
   display: flex;
   flex-wrap: wrap;
-  @include desk {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
   }
@@ -47,7 +43,7 @@
   @include desk {
     min-width: 170px;
     &:nth-child(3n) {
-      margin-right: 30px;
+      margin-right: 0;
     }
   }
 }

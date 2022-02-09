@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
             <nav class="container header__nav">
                     <a href="/" class="logo header__logo">
                         <span class="accent">Web</span>Studio
@@ -40,12 +40,27 @@
                                     <use href="./img/icons.svg#icon-tel"></use>
                                 </svg>
                                 </a>
-                            
                         </li>
                     </ul>
                 </div>
             </nav>
-    </header> -->
+<div class="container">
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+    </svg>
+</button>
+
+<ul class="menu">
+    <li><a href="" class="link">Студия</a></li>
+    <li><a href="" class="link">Портфолио</a></li>
+    <li><a href="" class="link">Контакты</a></li>
+</ul>
+</div>
+</div>
+    </header>
     <!-------------- ГЕРОЙ ------------------------------------------------------------>
  <main>
         <section class="hero container">
@@ -130,7 +145,13 @@
                 <h2 class="team__container-heading">Наша команда</h2>
                     <ul class="team__container-team list">
                         <li class="team__container-item">
-                            <img src="/img/igordemjanenko.jpeg" class="link" alt="IgorDemjanenko" width="270">
+                            <picture>
+                                <source srcset="./img/team-man1-dt-1x.jpg 1x, ./img/team-man1-dt-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/team-man1-tab-1x.jpg 1x, ./img/team-man1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/team-man1-mob-1x.jpg 1x, ./img/team-man1-mob-2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/imagesfirstpage/man1.jpg" alt="man1">
+                            </picture>
+                            <!-- <img src="/img/igordemjanenko.jpeg" class="link" alt="IgorDemjanenko" width="270"> -->
                             <div class="team__container-block">
                                 <h3 class="team__container-block-title">Игорь Демьяненко</h3>
                                 <p class="team__container-block-text">Product Designer</p>
@@ -167,7 +188,12 @@
                             </div>
                         </li>
                         <li class="team__container-item">
-                            <img src="./img/olgarepina.jpeg" class="link" alt="OlgaRepina" width="270">
+                            <picture>
+                                <source srcset="./img/team-woman-dt-1x.jpg 1x, ./img/team-woman-dt-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/team-woman-tab-1x.jpg 1x, ./img/team-woman-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/team-woman-mob-1x.jpg 1x, ./img/team-woman-mob-2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/imagesfirstpage/woman.jpg" alt="woman">
+                            </picture>
                             <div class="team__container-block">
                                 <h3 class="team__container-block-title">Ольга Репина</h3>
                                 <p class="team__container-block-text">Frontend Developer</p>
@@ -204,7 +230,12 @@
                             </div>
                         </li>
                         <li class="team__container-item">
-                            <img src="./img/nikolaytarasov.jpeg" class="link" alt="NikolayTarasov" width="270">
+                            <picture>
+                                <source srcset="./img/team-man2-dt-1x.jpg 1x, ./img/team-man2-dt-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/team-man2-tab-1x.jpg 1x, ./img/team-man2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/team-man2-mob-1x.jpg 1x, ./img/team-man2-mob-2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/imagesfirstpage/man2.jpg" alt="man2">
+                            </picture>
                             <div class="team__container-block">
                                 <h3 class="team__container-block-title">Николай Тарасов</h3>
                                 <p class="team__container-block-text">Marketing</p>
@@ -241,7 +272,12 @@
                             </div>
                         </li>
                         <li class="team__container-item">
-                            <img src="./img/mikhailermakov.jpeg" class="link" alt="MikhailErmakov" width="270">
+                            <picture>
+                                <source srcset="./img/team-man3-dt-1x.jpg 1x, ./img/team-man3-dt-2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/team-man3-tab-1x.jpg 1x, ./img/team-man3-tab-2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/team-man3-mob-1x.jpg 1x, ./img/team-man3-mob-2x.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/imagesfirstpage/man3.jpg" alt="man3">
+                            </picture>
                             <div class="team__container-block">
                                 <h3 class="team__container-block-title">Михаил Ермаков</h3>
                                 <p class="team__container-block-text">UI Designer</p>
@@ -453,5 +489,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </body>
     </html>

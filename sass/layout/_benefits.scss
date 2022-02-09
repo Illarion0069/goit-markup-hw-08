@@ -6,35 +6,48 @@
   }
 }
 .benefits__container-list {
-  @include tel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @media screen and (min-width: 480px) {
+    background-color: var(--mobile-background);
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--title-text-color);
   }
-  @include desk {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--title-text-color);
   }
 }
 .benefits__container-item {
   @media screen and (min-width: 480px) {
-    width: 450px;
+    margin-right: 0px;
     margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    margin-bottom: 30px;
-    &:nth-last-child(-n + 2) {
-      margin-right: 0;
-      margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
-  @include desk {
-    width: 270px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
   }
 }
 

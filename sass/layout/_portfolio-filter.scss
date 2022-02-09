@@ -12,14 +12,13 @@
 }
 
 .filter__container-list {
-  @media screen and (max-width: 480px) {
+  display: flex;
+  @media screen and (min-width: 480px) {
     flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-start;
+    margin-bottom: 50px;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    flex-wrap: wrap;
-    display: flex;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     justify-content: center;
   }
 }

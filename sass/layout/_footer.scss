@@ -1,16 +1,8 @@
 .footer {
+  width: 100%;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  @include tel {
-    width: 100%;
-  }
-  @include tab {
-    width: 100%;
-  }
-  @include desk {
-    width: 100%;
-  }
 }
 .footer__section {
   @include desk {
