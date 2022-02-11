@@ -19,3 +19,21 @@
     @content;
   }
 }
+@mixin textFont($ff: $roboto, $fw: 400, $fs: 14px, $lh: 1.71, $ls: 0.03em) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin minMedia($startBreakpoint) {
+  @media screen and (min-width: $startBreakpoint) {
+    @content;
+  }
+}
+
+@mixin maxMedia($finishBreakpoint) {
+  @media screen and (max-width: $finishBreakpoint) {
+    @content;
+  }
+}

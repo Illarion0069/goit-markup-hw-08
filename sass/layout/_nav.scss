@@ -5,9 +5,30 @@
 .header__nav {
   @extend .display-flex;
 }
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__nav {
+    justify-content: flex-end;
+  }
+}
 .site-nav {
   @extend .display-flex;
   margin-left: 93px;
+}
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 .site-nav__item {
   margin-right: 50px;
@@ -47,6 +68,4 @@
     background: var(--accent-color);
     border-radius: 2px;
   }
-}
-.contacts__icon {
 }
