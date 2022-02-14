@@ -33,9 +33,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 302px;
 }
 
 .mobile-menu__menu-toggle {
@@ -57,7 +56,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__menu-toggle {
+  .menu-toggle__icon-menu {
     display: none;
   }
 }
@@ -147,7 +146,7 @@
     display: none;
   }
 }
------------------- .menu__link {
+.menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;

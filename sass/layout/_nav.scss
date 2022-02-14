@@ -4,15 +4,17 @@
 
 .header__nav {
   @extend .display-flex;
+  margin: 0, auto;
 }
 @media screen and (min-width: 480px) {
   .header__nav {
-    margin-left: 15px;
+    // margin-left: 15px;
   }
 }
 .menu {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .contacts {

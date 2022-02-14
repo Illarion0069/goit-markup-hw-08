@@ -1,9 +1,7 @@
 .benefits {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @include desk {
-    width: 1200px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
 }
 .benefits__container-list {
   @media screen and (min-width: 480px) {
@@ -61,6 +59,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) {
     display: flex;

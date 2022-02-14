@@ -6,6 +6,8 @@
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -24,6 +26,8 @@
     }
   }
   @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -63,29 +67,34 @@
 }
 
 .hero__container {
-  padding-top: 118px;
-  padding-bottom: 118px;
   text-align: center;
 }
 .hero__container-title {
   margin-bottom: 30px;
   @media (min-width: 480px) {
+    width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 768px) {
+    width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
+    min-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -93,7 +102,8 @@
     letter-spacing: 0.06em;
     color: #ffffff;
     display: flex;
-    text-align: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

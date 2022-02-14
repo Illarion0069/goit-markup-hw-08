@@ -24,12 +24,11 @@
 }
 .mobile-menu__container {
   position: relative;
-
   display: flex;
   flex-direction: column;
-  height: 100%;
+
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 302px;
 }
 .mobile-menu__menu-toggle {
   position: absolute;
@@ -45,7 +44,7 @@
   right: 15px;
 }
 @media screen and (min-width: 768px) {
-  .page-header__menu-toggle {
+  .menu-toggle__icon-menu {
     display: none;
   }
 }
@@ -128,7 +127,7 @@
     display: none;
   }
 }
------------------- .menu__link {
+.menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;

@@ -5,6 +5,7 @@
   padding-bottom: 60px;
 }
 .footer__section {
+  margin: 0, auto;
   @include desk {
     display: flex;
     justify-content: center;
@@ -29,6 +30,9 @@
   @include tab {
     margin: 0;
     text-align: center;
+  }
+  @include desk {
+    text-align: left;
   }
 }
 
