@@ -1,16 +1,38 @@
 .clients__container {
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin: 0, auto;
+  @include tel {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__container-heading {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
+  @include tel {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+  }
+  @include tab {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+  }
+  @include desk {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 .clients__container-list {
   display: flex;

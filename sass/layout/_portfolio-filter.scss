@@ -1,6 +1,16 @@
 .filter {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include tel {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .filter__container {
   @media screen and (max-width: 480px) {

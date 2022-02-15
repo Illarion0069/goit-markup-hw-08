@@ -15,6 +15,9 @@
 }
 
 .footer__left-logo {
+  @include desk {
+    justify-content: flex-start;
+  }
   display: flex;
   align-items: center;
   margin-bottom: 20px;
